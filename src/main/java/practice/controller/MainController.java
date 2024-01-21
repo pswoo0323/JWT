@@ -18,7 +18,7 @@ public class MainController {
     @GetMapping("/")
     public String mainP(){
 
-        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        String email = SecurityContextHolder.getContext().getAuthentication().getName();
                             //세션 현재 사용자 아이디
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
@@ -30,6 +30,6 @@ public class MainController {
 
        // String name = SecurityContextHolder.getContext().getAuthentication().getName();
 
-        return "Main Controller : "+username + role;
+        return "Main Controller : "+ email + role;
     }
 }

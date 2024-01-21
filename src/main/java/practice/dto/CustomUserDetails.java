@@ -29,19 +29,16 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public String getPassword() {
-
         return userEntity.getPassword();
     }
 
     @Override
     public String getUsername() {
-
         return userEntity.getUsername();
     }
 
     @Override
     public boolean isAccountNonExpired() {
-
         return true;
     }
 
